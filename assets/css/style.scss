@@ -1,0 +1,12 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Remove the GitHub ribbon on the left */
+.github-fork-ribbon {
+    display: none;
+}
+
+footer .container {
+    display: none;
+}
