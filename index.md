@@ -3,4 +3,5 @@ layout: default
 title: Home
 ---
 
-# Welcome to my blog!
+# Welcome to Senectetus
+Bringing writings of Seneca and Epictetus
