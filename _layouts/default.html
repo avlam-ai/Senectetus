@@ -36,6 +36,20 @@
         {{ content }}
       </section>
 
+      <!-- Blog posts section (for the homepage or other pages with posts) -->
+      <section class="blog-list" style="padding: 20px;">
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                <h3>{{ post.title }}</h3>
+              </a>
+              <p>{{ post.excerpt | strip_html }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
       <!-- Footer section -->
       <footer style="text-align: center; padding: 20px 0; background-color: transparent;">
         <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
