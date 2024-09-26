@@ -3,5 +3,5 @@ layout: default
 title: Home
 ---
 
-# Welcome to Senectetus
-Bringing writings of Seneca and Epictetus
+# Writings of Seneca and Epictetus
+Essays on reflections on the writings of the likes of Seneca and Epictetus, and how we can apply such wisdom to everyday life
