@@ -15,10 +15,6 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
 
-    <!-- SEO Meta Tags -->
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="{{ page.excerpt | strip_html }}">
-
     {% seo %}
     {% include head-custom.html %}
   </head>
@@ -34,23 +30,28 @@
         </div>
       </header>
 
-      <!-- Blog Post Content Section -->
-      <section id="main_content" style="padding: 20px 0 20px 0; clear: both;"> <!-- Added clear: both -->
-        <!-- Blog Post Title -->
-        <div class="blog-post" style="text-align: center;">
-          <h2>{{ page.title }}</h2> <!-- Title of the blog post -->
-          <p>{{ page.excerpt }}</p> <!-- Main idea or summary of the blog post -->
-          <hr>
-        </div>
+      <!-- Main content section -->
+      <section id="main_content" style="padding: 20px 0 20px 0;">
+        <!-- Dynamic content from index.md or other markdown files -->
+        {{ content }}
+      </section>
 
-        <!-- Blog Post Detailed Content -->
-        <div class="blog-content" style="max-width: 800px; margin: 0 auto;">
-          {{ content }} <!-- Full blog post content -->
-        </div>
+      <!-- Blog posts section (for the homepage or other pages with posts) -->
+      <section class="blog-list" style="padding: 20px; clear: both;"> <!-- Make sure to add clear: both -->
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                <h3>{{ post.title }}</h3>
+              </a>
+              <p>{{ post.excerpt | strip_html }}</p>
+            </li>
+          {% endfor %}
+        </ul>
       </section>
 
       <!-- Footer section -->
-      <footer style="text-align: center; padding: 20px 0; background-color: transparent; margin-top: 40px;">
+      <footer style="text-align: center; padding: 20px 0; background-color: transparent;">
         <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
       </footer>
     </div>
