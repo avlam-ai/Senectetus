@@ -35,8 +35,6 @@ The concept of **surrender**—accepting and embracing what happens to you—app
 
 These works collectively embody the idea of surrendering to the present moment, accepting life as it unfolds, and finding peace in aligning with the natural order.
 
-It sounds like you're working on a piece inspired by Stoic philosophy. Below is an approach that expands your ideas on acceptance and other Stoic principles by adding practical examples and addressing common misconceptions.
-
 ---
 
 ## Stoic Acceptance in Everyday Life
@@ -75,8 +73,6 @@ If your illness requires medical treatments that interfere with your work or soc
 
 **Conclusion**:  
 In accepting illness, you don’t surrender to it; instead, you embrace the reality of your situation and take control of the actions you can manage. By balancing treatment, lifestyle changes, and emotional resilience, you empower yourself to live a fulfilling life despite the challenges your illness may present.
-
-
 
 ---
 
