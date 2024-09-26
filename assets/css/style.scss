@@ -10,3 +10,10 @@
 footer p:last-of-type, .octocat {
   display: none;
 }
+#main_content {
+  margin-bottom: 50px; /* Add bottom margin to push footer below content */
+}
+
+footer {
+  margin-top: 50px; /* Ensure footer has enough space above it */
+}
