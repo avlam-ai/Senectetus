@@ -41,7 +41,8 @@
 
         <!-- Blog Post Detailed Content -->
         <div class="blog-content" style="max-width: 800px; margin: 0 auto;">
-          {{ content }} <!-- Full content of the blog post -->
+          <!-- We exclude the excerpt from the main content -->
+          {{ content | replace: page.excerpt, "" }} <!-- Content excluding the excerpt -->
         </div>
       </section>
 
