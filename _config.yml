@@ -3,3 +3,5 @@ plugins:
   - jekyll-sass-converter
 
 permalink: /:title/
+
+# Trigger rebuild
