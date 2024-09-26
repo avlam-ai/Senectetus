@@ -5,18 +5,6 @@ footer p:last-of-type {
   display: none;
 }
 
-.ribbon-outer {
-  padding-bottom: 20px; /* Adjust spacing */
-}
-
-#main_content {
-  margin-bottom: 50px; /* Ensure footer doesn't overlap */
-}
-
-footer {
-  margin-top: 50px;
-}
-
 /* Remove octocat completely if not done in HTML */
 .octocat {
   display: none;
