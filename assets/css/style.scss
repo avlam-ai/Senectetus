@@ -1,72 +1,57 @@
 /* General Styles */
 
-/* Fix white background behind banner */
-.ribbon-outer {
-  background-color: transparent; /* Ensure no background behind the ribbon */
-  margin: 0;
-  padding: 0;
-  clear: both; /* Ensure the content doesn't overlap the ribbon */
-  min-height: 150px; /* Ensure the ribbon has enough height */
-  padding: 20px 0; /* Adjust padding for visual spacing */
+.header-content {
+  text-align: center;
+  padding: 50px 0; /* Space around the title */
 }
 
-/* Correct the spacing between elements */
-#main_content {
-  margin-top: 50px; /* Ensure main content starts below the banner */
-  margin-bottom: 120px; /* Give extra space before the footer */
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.blog-list {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.blog-list h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.blog-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-list li {
+  margin-bottom: 20px;
+}
+
+.blog-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.blog-list h3 {
+  font-size: 1.5em;
+}
+
+.blog-list p {
+  font-size: 1em;
+  color: #666;
 }
 
 footer {
-  margin-top: 120px; /* Add sufficient space above the footer */
-  padding: 20px 0; /* Ensure padding for the footer content */
   text-align: center;
+  padding: 20px 0;
   background-color: #f8f8f8;
-}
-
-/* Fix copyright position on ribbon */
-.ribbon-outer {
-  position: relative; /* Ensure it's positioned within its own flow */
-  z-index: 1; /* Make sure the ribbon content displays on top */
-}
-
-.ribbon-inner {
-  position: relative;
-  z-index: 2; /* Ensure inner content shows on top of the ribbon */
-  color: #fff; /* Ensure text is readable */
-  text-align: center;
-  padding: 10px;
-}
-
-/* Remove any unnecessary GitHub elements */
-footer p:last-of-type {
-  display: none;
-}
-
-.github-fork-ribbon {
-  display: none;
-}
-
-.octocat {
-  display: none;
-}
-
-/* Left and right tails */
-.left-tail, .right-tail {
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: inherit; /* Ensure it matches the ribbon color */
-}
-
-/* Responsive design adjustments */
-@media screen and (max-width: 640px) {
-  #main_content {
-    margin-bottom: 80px; /* Adjust margin for mobile view */
-    margin-top: 120px; /* Ensure top margin for mobile */
-  }
-
-  footer {
-    margin-top: 80px; /* Adjust footer margin for mobile */
-  }
+  font-size: 1em;
 }
