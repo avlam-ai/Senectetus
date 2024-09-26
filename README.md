@@ -1,2 +1,2 @@
 # Senectetus
-Essays on reflections and how we can apply wisdom from the likes of Seneca and Epictetus to everyday life
+Philosophy essays on reflections and how we can apply wisdom from the likes of Seneca and Epictetus to everyday life
