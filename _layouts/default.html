@@ -18,9 +18,9 @@
       })
     </script>
 
-{% seo %}
+    {% seo %}
 
-{% include head-custom.html %}
+    {% include head-custom.html %}
   </head>
 
   <body>
@@ -30,8 +30,10 @@
       <header>
         <div class="ribbon-outer">
           <div class="ribbon-inner">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+            {% if page.url == "/" %}
+              <h1>{{ site.title | default: site.github.repository_name }}</h1>
+              <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+            {% endif %}
           </div>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -51,9 +53,7 @@
         </div>
       {% endif %}
 
-
       <span class="banner-fix"></span>
-
 
       <section id="main_content">
         {{ content }}
