@@ -31,26 +31,9 @@
       </header>
 
       <!-- Main content section -->
-      <section id="main_content" style="padding: 20px 0 80px 0;"> <!-- Added bottom padding to create space before footer -->
-        <!-- Writings of Seneca and Epictetus section -->
-        <div class="writings-section" style="text-align: center;">
-          <h2>Writings of Seneca and Epictetus</h2>
-          <p>Essays on how wisdom from Seneca and Epictetus can be applied to everyday life</p>
-        </div>
-
-        <!-- List of blog posts (if available) -->
-        <div class="blog-list">
-          <ul>
-            {% for post in site.posts %}
-              <li>
-                <a href="{{ post.url | relative_url }}">
-                  <h3>{{ post.title }}</h3>
-                </a>
-                <p>{{ post.excerpt | strip_html }}</p>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+      <section id="main_content" style="padding: 20px 0 80px 0;">
+        <!-- Dynamic content from index.md or other markdown files -->
+        {{ content }}
       </section>
 
       <!-- Footer section -->
