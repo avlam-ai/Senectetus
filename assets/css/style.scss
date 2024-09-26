@@ -1,28 +1,23 @@
----
----
-@import "{{ site.theme }}";
-
-/* Remove the GitHub ribbon on the left */
-.github-fork-ribbon {
-    display: none;
-}
-
-footer p:last-of-type, .octocat {
+footer p:last-of-type {
   display: none;
 }
-#main_content {
-  margin-bottom: 50px; /* Add bottom margin to push footer below content */
-}
-
-footer {
-  margin-top: 50px; /* Ensure footer has enough space above it */
+.github-fork-ribbon {
+  display: none;
 }
 
 .ribbon-outer {
-  padding-bottom: 20px; /* Add padding to fix any overlap */
+  padding-bottom: 20px; /* Adjust spacing */
 }
 
+#main_content {
+  margin-bottom: 50px; /* Ensure footer doesn't overlap */
+}
+
+footer {
+  margin-top: 50px;
+}
+
+/* Remove octocat completely if not done in HTML */
 .octocat {
-  display: none; /* This hides the GitHub logo */
+  display: none;
 }
-
