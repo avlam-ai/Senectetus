@@ -29,7 +29,7 @@
     <div class="shell">
       <!-- Header section -->
       <header>
-        <div class="ribbon-outer">
+        <div class="ribbon-outer" style="height: 150px; clear: both;"> <!-- Ensure banner has enough height and clearance -->
           <div class="ribbon-inner">
             {% if page.url == "/" %}
               <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -44,7 +44,7 @@
       <span class="banner-fix"></span>
 
       <!-- Main content section -->
-      <section id="main_content">
+      <section id="main_content" style="margin-top: 150px; margin-bottom: 120px;"> <!-- Adjust margin to prevent overlap -->
         {{ content }}
       </section>
 
