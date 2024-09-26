@@ -67,3 +67,8 @@ footer {
   background-color: transparent; /* Remove the white background */
   font-size: 1em;
 }
+
+/* Added margin for the blog section to create space between content and footer */
+#main_content {
+  padding-bottom: 80px; /* Add bottom padding to push content up from the footer */
+}
