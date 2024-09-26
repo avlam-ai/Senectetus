@@ -5,10 +5,13 @@
   background-color: transparent; /* Ensure no background behind the ribbon */
   margin: 0;
   padding: 0;
+  clear: both; /* Ensure the content doesn't overlap the ribbon */
+  height: 150px; /* Ensure the ribbon has enough height */
 }
 
 /* Correct the spacing between elements */
 #main_content {
+  margin-top: 150px; /* Ensure main content starts below the banner */
   margin-bottom: 120px; /* Give extra space before the footer */
 }
 
@@ -59,6 +62,7 @@ footer p:last-of-type {
 @media screen and (max-width: 640px) {
   #main_content {
     margin-bottom: 80px; /* Adjust margin for mobile view */
+    margin-top: 120px; /* Ensure top margin for mobile */
   }
 
   footer {
