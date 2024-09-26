@@ -2,6 +2,7 @@
 layout: post
 title: "Surrender"
 date: 2024-09-25
+permalink: /surrender/
 ---
 
 Accept and want what is happening to you. 
