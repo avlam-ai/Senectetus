@@ -14,11 +14,6 @@
     <script src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
-    <script>
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      });
-    </script>
 
     {% seo %}
     {% include head-custom.html %}
@@ -27,38 +22,36 @@
   <body>
     
     <div class="shell">
-      <!-- Header section -->
+      <!-- Simplified Header Section -->
       <header>
-        <div class="ribbon-outer" style="min-height: 150px; padding: 20px 0;"> <!-- Ensure sufficient height for the banner -->
-          <div class="ribbon-inner">
-            {% if page.url == "/" %}
-              <h1>{{ site.title | default: site.github.repository_name }}</h1>
-              <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-            {% endif %}
-          </div>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
+        <div class="header-content" style="text-align: center; padding: 50px 0;"> 
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
         </div>
       </header>
 
-      <span class="banner-fix"></span>
-
       <!-- Main content section -->
-      <section id="main_content" style="margin-top: 50px; margin-bottom: 120px;"> <!-- Adjust margin to prevent overlap -->
-        {{ content }}
+      <section id="main_content" style="padding: 20px 0;">
+        <!-- List of blog posts -->
+        <div class="blog-list">
+          <h2>Latest Blog Posts</h2>
+          <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url | relative_url }}">
+                  <h3>{{ post.title }}</h3>
+                </a>
+                <p>{{ post.excerpt | strip_html }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </section>
 
       <!-- Footer section -->
-      <footer>
-        <div class="ribbon-outer">
-          <div class="ribbon-inner">
-            <p>&copy; 2024 Your Name or Company Name. All rights reserved.</p>
-          </div>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </div>
+      <footer style="text-align: center; padding: 20px 0; background-color: #f8f8f8;">
+        <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
       </footer>
-
     </div>
 
   </body>
