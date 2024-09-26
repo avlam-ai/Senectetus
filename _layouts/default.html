@@ -22,21 +22,21 @@
   <body>
     
     <div class="shell">
-      <!-- Header Section (Remove the H1 here to avoid duplication of the "Senectetus" title) -->
+      <!-- Header Section -->
       <header>
-        <div class="header-content" style="text-align: center; padding: 50px 0;"> 
+        <div class="header-content" style="text-align: center; padding: 30px 0;"> <!-- Reduced padding -->
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         </div>
       </header>
 
       <!-- Main content section from index.md -->
-      <section id="main_content" style="padding: 20px 0 20px 0;">
-        {{ content }} <!-- This outputs the index.md content -->
+      <section id="main_content" style="padding: 10px 0;"> <!-- Reduced padding -->
+        {{ content }}
       </section>
 
-      <!-- Blog posts section (added some spacing fixes) -->
-      <section class="blog-list" style="padding: 20px; margin-top: 20px; clear: both;"> 
+      <!-- Blog posts section -->
+      <section class="blog-list" style="padding: 10px; margin-top: 10px; clear: both;"> <!-- Reduced padding and margin -->
         <ul>
           {% for post in site.posts %}
             <li>
@@ -50,7 +50,7 @@
       </section>
 
       <!-- Footer section -->
-      <footer style="text-align: center; padding: 20px 0; background-color: transparent; margin-top: 40px; clear: both;">
+      <footer style="text-align: center; padding: 10px 0; background-color: transparent; margin-top: 20px; clear: both;"> <!-- Reduced margin and padding -->
         <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
       </footer>
     </div>
