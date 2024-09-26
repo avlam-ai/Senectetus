@@ -15,15 +15,26 @@ p {
   margin: 10px 0;
 }
 
+/* Writings Section Styles */
+.writings-section {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.writings-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.writings-section p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Blog List Styles */
 .blog-list {
   margin: 20px auto;
   max-width: 800px;
-}
-
-.blog-list h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
 }
 
 .blog-list ul {
@@ -49,9 +60,10 @@ p {
   color: #666;
 }
 
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #f8f8f8;
+  background-color: transparent; /* Remove the white background */
   font-size: 1em;
 }
