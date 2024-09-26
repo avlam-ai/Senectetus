@@ -3,4 +3,3 @@ plugins:
   - jekyll-sass-converter
 
 permalink: /:title/
-
