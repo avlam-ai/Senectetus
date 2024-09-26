@@ -17,3 +17,12 @@ footer p:last-of-type, .octocat {
 footer {
   margin-top: 50px; /* Ensure footer has enough space above it */
 }
+
+.ribbon-outer {
+  padding-bottom: 20px; /* Add padding to fix any overlap */
+}
+
+.octocat {
+  display: none; /* This hides the GitHub logo */
+}
+
