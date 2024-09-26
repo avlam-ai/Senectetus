@@ -15,6 +15,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
 
+    <!-- SEO Meta Tags -->
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | strip_html }}">
+
     {% seo %}
     {% include head-custom.html %}
   </head>
@@ -41,8 +45,7 @@
 
         <!-- Blog Post Detailed Content -->
         <div class="blog-content" style="max-width: 800px; margin: 0 auto;">
-          <!-- We exclude the excerpt from the main content -->
-          {{ content | replace: page.excerpt, "" }} <!-- Content excluding the excerpt -->
+          {{ content }} <!-- Full blog post content -->
         </div>
       </section>
 
