@@ -1,11 +1,67 @@
+/* General Styles */
+
+/* Fix white background behind banner */
+.ribbon-outer {
+  background-color: transparent; /* Ensure no background behind the ribbon */
+  margin: 0;
+  padding: 0;
+}
+
+/* Correct the spacing between elements */
+#main_content {
+  margin-bottom: 120px; /* Give extra space before the footer */
+}
+
+footer {
+  margin-top: 120px; /* Add sufficient space above the footer */
+  padding: 20px 0; /* Ensure padding for the footer content */
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+/* Fix copyright position on ribbon */
+.ribbon-outer {
+  position: relative; /* Ensure it's positioned within its own flow */
+  z-index: 1; /* Make sure the ribbon content displays on top */
+}
+
+.ribbon-inner {
+  position: relative;
+  z-index: 2; /* Ensure inner content shows on top of the ribbon */
+  color: #fff; /* Ensure text is readable */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Remove any unnecessary GitHub elements */
 footer p:last-of-type {
   display: none;
 }
+
 .github-fork-ribbon {
   display: none;
 }
 
-/* Remove octocat completely if not done in HTML */
 .octocat {
   display: none;
+}
+
+/* Left and right tails */
+.left-tail, .right-tail {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: inherit; /* Ensure it matches the ribbon color */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 640px) {
+  #main_content {
+    margin-bottom: 80px; /* Adjust margin for mobile view */
+  }
+
+  footer {
+    margin-top: 80px; /* Adjust footer margin for mobile */
+  }
 }
