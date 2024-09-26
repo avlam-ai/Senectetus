@@ -6,12 +6,13 @@
   margin: 0;
   padding: 0;
   clear: both; /* Ensure the content doesn't overlap the ribbon */
-  height: 150px; /* Ensure the ribbon has enough height */
+  min-height: 150px; /* Ensure the ribbon has enough height */
+  padding: 20px 0; /* Adjust padding for visual spacing */
 }
 
 /* Correct the spacing between elements */
 #main_content {
-  margin-top: 150px; /* Ensure main content starts below the banner */
+  margin-top: 50px; /* Ensure main content starts below the banner */
   margin-bottom: 120px; /* Give extra space before the footer */
 }
 
